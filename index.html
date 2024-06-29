@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sriram R Portfolio</title>
     <style>
+        :root {
+            --background-color: black;
+            --text-color: white;
+            --highlight-color: rgba(0, 238, 255, 0.938);
+            --link-color: white;
+            --heading-color: rgba(144, 236, 238, 0.785);
+            --font-family: Arial, sans-serif;
+        }
         body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            margin: 0;
         }
         .profile-img {
             border-radius: 50%;
@@ -25,25 +34,27 @@
             list-style-type: none;
             padding: 0;
             text-align: center;
+            margin: 0;
+            background-color: #333;
         }
         nav ul li {
             display: inline;
             margin: 0 10px;
         }
         nav ul li a {
-            color: white;
+            color: var(--link-color);
             text-decoration: none;
             font-weight: bold;
+            padding: 10px;
         }
-        nav ul li a:hover{
-            color: rgba(255, 242, 0, 0.938);
-        }
-        nav ul li b:hover{
-            color: red;
+        nav ul li a:hover {
+            color: var(--highlight-color);
         }
         section {
             padding: 20px;
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
         footer {
             text-align: center;
@@ -58,14 +69,11 @@
             margin: 10px 0;
         }
         h2 {
-            color: white; /* White color for section headings */
-        }
-        .highlight {
-            color: lightgreen;
+            color: var(--heading-color); /* Heading color */
         }
         .contact-info a,
         .certifications-list li a {
-            color: white; /* All links in white */
+            color: var(--link-color); /* All links in white */
             text-decoration: underline; /* Underline for links */
         }
         .internship-logo {
@@ -74,11 +82,31 @@
             display: block;
             margin: 0 auto; /* Center align */
         }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        .project-description {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <img src="front.jpeg" alt="Sriram R" class="profile-img">
+        <img src="C:\Users\Sriram\OneDrive\Pictures\front.jpeg" alt="Sriram R" class="profile-img">
         <h1>Sriram R</h1>
         <p>Computer Science Graduate | Web Developer</p>
     </header>
@@ -110,14 +138,24 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Arduino based Obstacle Avoiding Car</strong> - Demonstrated an autonomous vehicle using ultrasonic sensors and Arduino microcontrollers.</li>
-            <li><strong>RFID Scanner using IoT</strong> - Streamlined attendance tracking using RFID technology and IoT connectivity.</li>
+            <li>
+                <strong>Arduino based Obstacle Avoiding Car</strong>
+                <div class="project-description">
+                    <p>Demonstrated an autonomous vehicle using ultrasonic sensors and Arduino microcontrollers. Presented in the SRM IST Tiruchirappalli Annual Project Expo conducted in June 2022, this project aimed to demonstrate an autonomous vehicle capable of navigating its environment without human intervention. The car was equipped with ultrasonic sensors that constantly scanned the surroundings, detecting obstacles in its path. Upon detecting an obstacle, the Arduino microcontroller processed the sensor data and instructed the car to change its direction, thereby avoiding collisions. Through meticulous design and programming, the project team successfully implemented algorithms for obstacle detection and avoidance, showcasing the potential of Arduino-based systems in real-world applications.</p>
+                </div>
+            </li>
+            <li>
+                <strong>RFID Scanner using IoT</strong>
+                <div class="project-description">
+                    <p>Aimed to streamline attendance tracking through RFID technology and IoT connectivity. Each participant received a unique RFID tag for identification. As individuals entered designated areas like classrooms or event venues, the RFID scanner automatically detected their presence by reading these tags. Data collected by the scanner was transmitted in real-time to a central database via IoT, updating attendance records seamlessly. This integration reduced administrative workload and potential errors. Additionally, the system offered analytics and reporting features for insights into attendance trends. Overall, the project showcased how technology can efficiently manage attendance, benefiting education and beyond.</p>
+                </div>
+            </li>
         </ul>
     </section>
 
     <section id="internship">
         <h2>Internship</h2>
-        <img src="ongclogo.jpeg" alt="ONGC Logo" class="internship-logo">
+        <img src="C:\Users\Sriram\Downloads\ongclogo.jpeg" alt="ONGC Logo" class="internship-logo">
         <p><strong>Web Development Intern</strong><br>Oil and Natural Gas Corporation Ltd (April 2024)<br>Developed and deployed a portal for the ONGC Cauvery Asset in Karaikal.</p>
     </section>
 
@@ -135,6 +173,10 @@
         <p>Email: <a href="mailto:sriram2420004@gmail.com">sriram2420004@gmail.com</a></p>
         <p>LinkedIn: <a href="http://linkedin.com/in/sri-ram-r-396789229" target="_blank">linkedin.com/in/sri-ram-r-396789229</a></p>
         <p>Phone: +91 6383392515</p>
+        <div class="social-icons">
+            <a href="mailto:sriram2420004@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="http://linkedin.com/in/sri-ram-r-396789229" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </section>
 
     <footer>
