@@ -19,7 +19,7 @@
             color: var(--text-color);
             font-family: var(--font-family);
             margin: 0;
-            background-image: ('pattern_background.png'); /* Replace 'background.jpg' with your image path */
+            background-image: url('pattern_background.png'); /* Replace with your image path */
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Ensures the background image stays fixed as the content scrolls */
@@ -40,7 +40,7 @@
             padding: 0;
             text-align: center;
             margin: 0;
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better contrast */
         }
         nav ul li {
             display: inline;
@@ -60,11 +60,15 @@
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for better contrast */
+            border-radius: 10px; /* Rounded corners for sections */
+            margin-top: 20px; /* Spacing between sections */
         }
         footer {
             text-align: center;
             padding: 10px;
             border-top: 1px solid #555;
+            color: var(--text-color); /* Text color for footer */
         }
         section ul {
             list-style: none; /* Remove bullets */
@@ -105,6 +109,7 @@
             text-align: left;
             margin: 0 auto;
             max-width: 800px;
+            color: var(--text-color); /* Text color for project descriptions */
         }
         /* Additional styles for gold text */
         .additional-info {
@@ -182,22 +187,4 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:sriram2420004@gmail.com">sriram2420004@gmail.com</a></p>
-        <p>LinkedIn: <a href="http://linkedin.com/in/sri-ram-r-396789229" target="_blank">linkedin.com/in/sri-ram-r-396789229</a></p>
-        <p>Phone: +91 6383392515</p>
-        <div class="social-icons">
-            <a href="mailto:sriram2420004@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="http://linkedin.com/in/sri-ram-r-396789229" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </section>
-
-    <section id="additional-info" class="additional-info">
-        <h2>Additional Information</h2>
-        <p>STATUS: Single, Baby, Single!</p>
-        <p>BODY TYPE: Lean & Mean</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Sriram R. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <p>LinkedIn: <a href="http://linkedin.com/in/sri-
