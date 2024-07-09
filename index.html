@@ -15,31 +15,14 @@
             --gold-color: gold; /* New gold color variable */
         }
         body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
-    margin: 0;
-    /* Define three layers of background images with gradients */
-    background-image: 
-        /* Top 30% */
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-
-        /* Middle 40% (70% - 30%) */
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        
-        /* Bottom 30% (100% - 70%) */
-        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        
-        /* Background image */
-        url('pattern_background.png'); /* Replace with your image path */
-
-    /* Position and size settings */
-    background-size: 100% 30%, 100% 40%, 100% 30%, cover;
-    background-position: center, center, center, center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Ensures the background image stays fixed as the content scrolls */
-}
-
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            margin: 0;
+            background-image: url('pattern_background.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Ensures the background image stays fixed as the content scrolls */
         }
         .profile-img {
             border-radius: 50%;
@@ -207,4 +190,3 @@
         <p>LinkedIn: <a href="http://linkedin.com/in/sri-ram-r-396789229">linkedin.com/in/sri-ram-r-396789229</a></p>
     <p>Phone: +91 6383392515</p>
 </section>
-
